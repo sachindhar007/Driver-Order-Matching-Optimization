@@ -23,17 +23,17 @@ Repeat until all orders are matched.
 
 # Outcome: 
 The Greedy algorithm provided an initial ETA total of 4760 across the driver-order pairs.
-4.2 Bulk Matching Using Hungarian Algorithm
 
+# 4.2 Bulk Matching Using Hungarian Algorithm
 To achieve better global optimization, we applied the Hungarian algorithm using the linear sum assignment method from the scipy.optimize library. Orders within each bulk were grouped and optimized collectively.
-
-# Steps:
+## Steps:
 Group orders by their respective bulks.
 Construct a cost matrix representing ETAs between orders and drivers.
 Solve the assignment problem using the Hungarian algorithm to find the optimal driver-order pairs.
 Remove assigned drivers from the available pool and repeat for the next bulk.
 
-# Outcome: The Hungarian algorithm improved the total ETA, reducing it to 4430—a 6.93% improvement compared to the Greedy approach.
+# Outcome: 
+The Hungarian algorithm improved the total ETA, reducing it to 4430—a 6.93% improvement compared to the Greedy approach.
 
 # 5. Results and Analysis
 Greedy Matching Total ETA: 4760
