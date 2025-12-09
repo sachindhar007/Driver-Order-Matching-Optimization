@@ -2,6 +2,8 @@
 # 1. Introduction
 In logistics and delivery systems, efficiently matching drivers to orders is critical for minimizing delays and optimizing resource utilization. This project focuses on implementing and comparing two approaches—Greedy and Hungarian algorithms—for driver-order matching. We aim to minimize the Estimated Time of Arrival (ETA) while considering assignment efficiency across multiple order bulks.
 
+The repository contains a reproducible walkthrough in `The Matching Magic.ipynb` that loads the sample dataset (`matching.parquet`), builds cost matrices, and applies both algorithms to show how assignment quality and total ETA change. It is intended as a practical reference for anyone exploring dispatch optimization techniques on a small, time-bucketed dataset.
+
 # 2. Problem Statement
 
 The goal is to assign drivers to orders in a way that reduces the total ETA while optimizing the overall assignment process. The dataset contains 20 orders placed within a narrow time window and 25 available drivers, resulting in 500 driver-order pairs. The orders are grouped into four bulks, each covering a 5-second interval.
